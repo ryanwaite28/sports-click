@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Sports Click</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="https://ryanwaite28.github.io/my-cdn/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="https://ryanwaite28.github.io/my-cdn/css/emerald.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 785px)" href="mobile-style.css">
+		<link rel="icon" type="image/" size="20x20" href="img/basketball.png"/>
+		<script src="https://ryanwaite28.github.io/my-cdn/js/jquery.js"></script>
+		<script src="https://ryanwaite28.github.io/my-cdn/js/bootstrap.js"></script>
+		<script src="https://ryanwaite28.github.io/my-cdn/js/emerald.js"></script>
+
+	</head>
+
+	<body ng-app="myApp" ng-controller="masterCtrl">
+
+		<h1 id="top-text"><strong>Sports Click</strong></h1>
+		<hr>
+
+		<ul id="list">
+
+		</ul>
+		<hr>
+		<input data-toggle="collapse" data-target="#newsportform" class="btn btn-info middlr transition" type="button" id="show-btn" value="Add New Sport"/>
+		<div id="newsportform" class="collapse">
+			<br>
+			<input class="middlr transition" type="text" name="newname" placeholder="New Sport Name"/><br>
+			<input class="middlr transition" type="text" name="newimage" placeholder="New Sport Image"/><br>
+			<input class="btn btn-success middlr transition" type="button" id="add-btn" value="Confirm"/>
+		</div>
+		<hr>
+
+		<h3 class="text-center" id="model-name"></h3>
+		<br>
+
+		<div id="img-div">
+			<img class="transition" src="" id="model-image"/>
+		</div>
+		<br>
+
+		<p class="text-center" id="model-count"></p>
+		<br>
+
+		<input style="display: none;" class="btn btn-danger middlr transition" type="button" id="delete-btn" value="Delete"/>
+
+		<hr>
+
+		<p class="text-center"><strong><span id="messenger"></span></strong></p>
+
+
+		<!-- Application Script -->
+		<script src="script.js"></script>
+
+	</body>
+
+</html>
