@@ -73,7 +73,6 @@ var models = {
 
     document.querySelector('input[name="newname"]').value = '';
     document.querySelector('input[name="newimage"]').value = '';
-    document.getElementById('newsportform').style.display = 'none';
 
     controller.render();
 
